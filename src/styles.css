@@ -3,7 +3,10 @@
 
 body {
     background:url(../assets/images/Background.jpg) repeat;
-    background-size: 50%;
+    background-size: 40%;
     height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
     /* opacity: 0.5; */
 }
