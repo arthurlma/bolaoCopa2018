@@ -12,6 +12,16 @@ export class NavbarComponent implements OnInit {
  
   ngOnInit() {
   }
+
+  logado = true;
+
+  login(){
+    this.logado = true;
+  }
+
+  logout(){
+    this.logado = false;
+  }
   
   // private currentCollapse: boolean;
   // @Output() 
@@ -24,9 +34,8 @@ export class NavbarComponent implements OnInit {
   //   return this.currentCollapse;
   // }
 
-
-  // collapseMenu(){
-  //   this.collapse = !this.collapse;
+  // toggleMenu(){
+  //   document.getElementById('menu').click();
   // }
 
 }
