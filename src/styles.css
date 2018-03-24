@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-/* body {
+body {
     background:url(../assets/images/Background.jpg) repeat;
     background-size: 40%;
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 11;
-} */
+}
