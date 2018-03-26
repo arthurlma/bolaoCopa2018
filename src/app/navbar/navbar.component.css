@@ -1,18 +1,19 @@
 .navbar {
     background:url(../../../assets/images/WorldCupBackground.png);
-    padding-top:8em;
+    padding-top:13em;
     background-size:57%;
     height:10em;
  }
  
  .wheat {
      color: #E2BF80;
-     font-size: 20px;
+     font-size: 170%;
+     /* font-size: 25px; */
  }
  
  .wheat2 {
      color: #E2BF80;
-     /* font-size: 20px; */
+     font-size: 140%;
     }
     
 .background{
@@ -20,5 +21,5 @@
  }
 
  li {
-     padding-left: 1.5em;
+     padding-left: 2em;
  }

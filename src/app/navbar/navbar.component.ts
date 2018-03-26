@@ -8,23 +8,23 @@ import { EventEmitter } from 'events';
 })
 export class NavbarComponent implements OnInit {
 
+  logado = true;
+
   constructor() { }
- 
+
   ngOnInit() {
   }
 
-  logado = true;
-
-  login(){
+  login() {
     this.logado = true;
   }
 
-  logout(){
+  logout() {
     this.logado = false;
   }
-  
+
   // private currentCollapse: boolean;
-  // @Output() 
+  // @Output()
   // collapseChange: EventEmitter<any> = new EventEmitter();
   // @Input() set collapse(collapse: boolean){
   //   this.currentCollapse = collapse;
