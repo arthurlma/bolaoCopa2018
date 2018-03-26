@@ -11,17 +11,26 @@
 
 input {
     display: inline-block;
+    text-align: center;
 }
 
 span{
-    padding: 3%;
+    padding: 0%;
+    /* vertical-align: bottom; */
 }
 
 .x{
     /* padding-right: 4%; */
-    padding-left: 2%;
+    /* padding-left: 2%;
     margin-left: 1%;
-    width: 14%;
+    width: 14%; */
+    margin-top: 0%;
+}
+
+img{
+    width: 20%;
+    padding-top: 0%;
+    margin-top: 4%;
 }
 
 .jogo{
@@ -29,9 +38,32 @@ span{
 }
 
 .time01{
+    padding: 0%;
     float: left;
+    vertical-align: -webkit-baseline-middle;
+} 
+
+.time01 span{
+    /* vertical-align: bottom; */
+    vertical-align: -webkit-baseline-middle;
+    
 } 
 
 .time02{
+    padding: 0%;
     float: right;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
