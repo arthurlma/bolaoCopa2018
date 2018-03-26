@@ -1,5 +1,5 @@
 .navbar {
-    background:url(../../../assets/images/WorldCupBackground.png);
+    background:url(/assets/images/WorldCupBackground.png);
     padding-top:13em;
     background-size:57%;
     height:10em;
@@ -17,7 +17,7 @@
     }
     
 .background{
-    background:url(../../../assets/images/WorldCupBackground.png);
+    background:url(/assets/images/WorldCupBackground.png);
  }
 
  li {
