@@ -1,87 +1,153 @@
+<h5>{{nomeGrupo}}</h5>
 <form>
   <div class="row form-group col-12" style="margin:0%; padding: 0%">
     <div class="col-5 background" style="margin-left: 3.5%;">
       <div id="jogo01" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/Russia.png">
-          <span>Rússia</span>
+          <img src="{{iconPais1}}">
+          <span>{{nomePais1}}</span>
           <input type="number" class="form-control placar" style="float: right;" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarArabia" min="0" value="">
-          <span>Arábia Saudita</span>
-          <img src="/assets/icons65/ArabiaSaudita.png" style="float: right;">
+          <span>{{nomePais2}}</span>
+          <img src="{{iconPais2}}" style="float: right;">
         </div>
       </div>
       <div id="jogo02" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/Egito.png">
-          <span>Egito</span>
+          <img src="{{iconPais3}}">
+          <span>{{nomePais3}}</span>
           <input type="number" class="form-control placar" style="float: right;" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarRussia" min="0" value="">
-          <span>Uruguai</span>
-          <img src="/assets/icons65/Uruguai.png" style="float: right;">
+          <span>{{nomePais4}}</span>
+          <img src="{{iconPais4}}" style="float: right;">
         </div>
       </div>
       <div id="jogo03" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/Russia.png">
-          <span>Rússia</span>
+          <img src="{{iconPais1}}">
+          <span>{{nomePais1}}</span>
           <input type="number" style="float: right;" class="form-control placar" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarRussia" min="0" value="">
-          <span>Egito</span>
-          <img src="/assets/icons65/Egito.png" style="float: right;">
+          <span>{{nomePais3}}</span>
+          <img src="{{iconPais3}}" style="float: right;">
         </div>
       </div>
       <div id="jogo04" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/Uruguai.png">
-          <span>Uruguai</span>
+          <img src="{{iconPais4}}">
+          <span>{{nomePais4}}</span>
           <input type="number" style="float: right;" class="form-control placar" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarRussia" min="0" value="">
-          <span>Arábia Saudita</span>
-          <img src="/assets/icons65/ArabiaSaudita.png" style="float: right;">
+          <span>{{nomePais2}}</span>
+          <img src="{{iconPais2}}" style="float: right;">
         </div>
       </div>
       <div id="jogo05" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/Uruguai.png">
-          <span>Uruguai</span>
+          <img src="{{iconPais4}}">
+          <span>{{nomePais4}}</span>
           <input type="number" style="float: right;" class="form-control placar" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarRussia" min="0" value="">
-          <span>Rússia</span>
-          <img src="/assets/icons65/Russia.png" style="float: right;">
+          <span>{{nomePais1}}</span>
+          <img src="{{iconPais1}}" style="float: right;">
         </div>
       </div>
       <div id="jogo06" class="jogo">
         <div class="time01 col-5">
-          <img src="/assets/icons65/ArabiaSaudita.png">
-          <span>Arábia Saudita</span>
+          <img src="{{iconPais2}}">
+          <span>{{nomePais2}}</span>
           <input type="number" style="float: right;" class="form-control placar" name="placarRussia" min="0" value="">
         </div>
-        <img class="x col-2" src="/assets/images/x.png" alt="X" width="15%">
+        <img class="x col-2" src="/assets/images/x.png" alt="X">
         <div class="time02 col-5">
           <input type="number" class="form-control placar" name="placarRussia" min="0" value="">
-          <span>Egito</span>
-          <img src="/assets/icons65/Egito.png" style="float: right;">
+          <span>{{nomePais3}}</span>
+          <img src="{{iconPais3}}" style="float: right;">
         </div>
       </div>
     </div>
     <!-- <div class="col-1"></div> -->
     <div class="col-6 background">
+      <div class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Classificação</th>
+            <th scope="col">P</th>
+            <th scope="col">J</th>
+            <th scope="col">V</th>
+            <th scope="col">E</th>
+            <th scope="col">D</th>
+            <th scope="col">GP</th>
+            <th scope="col">GC</th>
+            <th scope="col">SG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">1</th>
+            <th>Primeiro Colocado</th>
+            <th>12</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>12</th>
+            <th>3</th>
+            <th>9</th>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">2</th>
+            <th>Segundo Colocado</th>
+            <th>12</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>12</th>
+            <th>3</th>
+            <th>9</th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <th>Terceiro Colocado</th>
+            <th>12</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>12</th>
+            <th>3</th>
+            <th>9</th>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <th>Quarto Colocado</th>
+            <th>12</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>3</th>
+            <th>12</th>
+            <th>3</th>
+            <th>9</th>
+          </tr>
+        </tbody>
+      </div>
     </div>
   </div>
 </form>
