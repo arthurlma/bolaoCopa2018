@@ -1,6 +1,6 @@
-.background {
-    background:url(../../assets/images/Background.jpg) repeat;
-    background-size: 50%;
-    height: 100%;
-    /* opacity: 0.5; */
+h2{
+    margin-left: 3.5%;
+    margin-right: 79%;
+    background-color: #cfd1d1;
+    border-radius: 7px;
 }

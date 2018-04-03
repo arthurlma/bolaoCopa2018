@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  // pais1 = 'Russia';
+  // pais2 = 'ArabiaSaudita';
+  // pais3 = 'Egito';
+  // pais4 = 'Uruguai';
 }

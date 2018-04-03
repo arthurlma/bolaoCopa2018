@@ -1,0 +1,87 @@
+.background{
+    background-color: #cfd1d1;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.placar{
+    width: 25%;
+    margin-top: 5%;
+}
+
+input {
+    display: inline-block;
+    text-align: center;
+}
+
+span{
+    padding: 0%;
+    /* vertical-align: bottom; */
+}
+
+.x{
+    /* padding-right: 4%; */
+    /* padding-left: 2%;
+    margin-left: 1%;
+    width: 14%; */
+    margin-top: 0%;
+}
+
+img{
+    width: 20%;
+    padding-top: 0%;
+    margin-top: 4%;
+}
+
+.jogo{
+    /* display: inline-block; */
+}
+
+.time01{
+    padding: 0%;
+    float: left;
+    vertical-align: -webkit-baseline-middle;
+} 
+
+.time01 span{
+    /* vertical-align: bottom; */
+    vertical-align: -webkit-baseline-middle;
+    
+} 
+
+.time02{
+    padding: 0%;
+    float: right;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h5{
+    margin-left: 3.5%;
+    margin-right: 90%;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    /* background-color: wheat; */
+    background-color: #cfd1d1;
+    border-radius: 7px;
+
+}
+
+table{
+    background-color: white;
+    margin-top: 2.5%;
+    height: 90%;
+}

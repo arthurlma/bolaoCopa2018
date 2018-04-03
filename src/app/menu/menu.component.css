@@ -1,9 +1,10 @@
 .list-group-item {
-    background: url(../../../assets/images/Background2.png);
+    background: url(/assets/images/Background2.png);
     color: #E2BF80;
 }
 
 .active {
     /* color: black;; */
+    border-color: #E2BF80;
     
 }
