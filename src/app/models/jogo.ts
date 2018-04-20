@@ -12,6 +12,8 @@ export class Jogo {
     derrotaSelecao1: number = null;
     derrotaSelecao2: number = null;
 
+    
+
 
     constructor(values: Object = {}) {
         Object.keys(this).forEach(key => {
