@@ -1,104 +1,104 @@
 <form>
   <h5>{{nomeGrupo}}</h5>
-  <main>
-    <section class="background">
+  <section class="container">
+    <section class="item-a background">
+      <!-- JOGO 1 -->
       <article id="jogo1" class="jogo">
         <div class="time01">
           <img src="{{iconPais1}}">
           <span>{{nomePais1}}</span>
           <input type="number" class="form-control placar" style="float: right;" name="placarPais1" min="0" [(ngModel)]="jogo1.placar1"
-          (ngModelChange)="partida1()">
+            (ngModelChange)="partida1()">
         </div>
         <img class="x" src="/assets/images/x.png" alt="X">
         <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo1.placar2"
-          (ngModelChange)="partida1()">
+          <input type="number" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo1.placar2" (ngModelChange)="partida1()">
           <span>{{nomePais2}}</span>
           <img src="{{iconPais2}}" style="float: right;">
         </div>
       </article>
       <!-- JOGO 2 -->
       <article id="jogo2" class="jogo">
-        <div class="time01">
-          <img src="{{iconPais3}}">
-          <span>{{nomePais3}}</span>
-          <input type="number" class="form-control placar" style="float: right;" name="placarPais3" min="0" [(ngModel)]="jogo2.placar1"
-          (ngModelChange)="partida2()">
-        </div>
-        <img class="x" src="/assets/images/x.png" alt="X">
-        <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo2.placar2"
-          (ngModelChange)="partida2()">
-          <span>{{nomePais4}}</span>
-          <img src="{{iconPais4}}" style="float: right;">
-        </div>
-      </article>
-      <!-- JOGO 3 -->
-      <article id="jogo3" class="jogo">
-        <div class="time01">
-          <img src="{{iconPais1}}">
-          <span>{{nomePais1}}</span>
-          <input type="number" style="float: right;" class="form-control placar" name="placarPais1" min="0" [(ngModel)]="jogo3.placar1"
-          (ngModelChange)="partida3()">
-        </div>
-        <img class="x" src="/assets/images/x.png" alt="X">
-        <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais3" min="0" [(ngModel)]="jogo3.placar2"
-          (ngModelChange)="partida3()">
-          <span>{{nomePais3}}</span>
-          <img src="{{iconPais3}}" style="float: right;">
-        </div>
-      </article>
-      <!-- JOGO 4 -->
-      <article id="jogo4" class="jogo">
-        <div class="time01">
-          <img src="{{iconPais4}}">
-          <span>{{nomePais4}}</span>
-          <input type="number" style="float: right;" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo4.placar1"
-          (ngModelChange)="partida4()">
-        </div>
-        <img class="x" src="/assets/images/x.png" alt="X">
-        <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo4.placar2"
-          (ngModelChange)="partida4()">
-          <span>{{nomePais2}}</span>
-          <img src="{{iconPais2}}" style="float: right;">
-        </div>
-      </article>
-      <!-- JOGO 5 -->
-      <article id="jogo5" class="jogo">
-        <div class="time01">
-          <img src="{{iconPais4}}">
-          <span>{{nomePais4}}</span>
-          <input type="number" style="float: right;" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo5.placar1"
-          (ngModelChange)="partida5()">
-        </div>
-        <img class="x" src="/assets/images/x.png" alt="X">
-        <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais1" min="0" [(ngModel)]="jogo5.placar2"
-          (ngModelChange)="partida5()">
-          <span>{{nomePais1}}</span>
-          <img src="{{iconPais1}}" style="float: right;">
-        </div>
-      </article>
-      <!-- JOGO 6 -->
-      <article id="jogo6" class="jogo">
-        <div class="time01">
-          <img src="{{iconPais2}}">
-          <span>{{nomePais2}}</span>
-          <input type="number" style="float: right;" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo6.placar1"
-          (ngModelChange)="partida6()">
-        </div>
-        <img class="x" src="/assets/images/x.png" alt="X">
-        <div class="time02">
-          <input type="number" class="form-control placar" name="placarPais3" min="0" [(ngModel)]="jogo6.placar2"
-          (ngModelChange)="partida6()">
-          <span>{{nomePais3}}</span>
-          <img src="{{iconPais3}}" style="float: right;">
-        </div>
-      </article>
+          <div class="time01">
+            <img src="{{iconPais3}}">
+            <span>{{nomePais3}}</span>
+            <input type="number" class="form-control placar" style="float: right;" name="placarPais3" min="0" [(ngModel)]="jogo2.placar1"
+            (ngModelChange)="partida2()">
+          </div>
+          <img class="x" src="/assets/images/x.png" alt="X">
+          <div class="time02">
+            <input type="number" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo2.placar2"
+            (ngModelChange)="partida2()">
+            <span>{{nomePais4}}</span>
+            <img src="{{iconPais4}}" style="float: right;">
+          </div>
+        </article>
+        <!-- JOGO 3 -->
+        <article id="jogo3" class="jogo">
+          <div class="time01">
+            <img src="{{iconPais1}}">
+            <span>{{nomePais1}}</span>
+            <input type="number" style="float: right;" class="form-control placar" name="placarPais1" min="0" [(ngModel)]="jogo3.placar1"
+            (ngModelChange)="partida3()">
+          </div>
+          <img class="x" src="/assets/images/x.png" alt="X">
+          <div class="time02">
+            <input type="number" class="form-control placar" name="placarPais3" min="0" [(ngModel)]="jogo3.placar2"
+            (ngModelChange)="partida3()">
+            <span>{{nomePais3}}</span>
+            <img src="{{iconPais3}}" style="float: right;">
+          </div>
+        </article>
+        <!-- JOGO 4 -->
+        <article id="jogo4" class="jogo">
+          <div class="time01">
+            <img src="{{iconPais4}}">
+            <span>{{nomePais4}}</span>
+            <input type="number" style="float: right;" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo4.placar1"
+            (ngModelChange)="partida4()">
+          </div>
+          <img class="x" src="/assets/images/x.png" alt="X">
+          <div class="time02">
+            <input type="number" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo4.placar2"
+            (ngModelChange)="partida4()">
+            <span>{{nomePais2}}</span>
+            <img src="{{iconPais2}}" style="float: right;">
+          </div>
+        </article>
+        <!-- JOGO 5 -->
+        <article id="jogo5" class="jogo">
+          <div class="time01">
+            <img src="{{iconPais4}}">
+            <span>{{nomePais4}}</span>
+            <input type="number" style="float: right;" class="form-control placar" name="placarPais4" min="0" [(ngModel)]="jogo5.placar1"
+            (ngModelChange)="partida5()">
+          </div>
+          <img class="x" src="/assets/images/x.png" alt="X">
+          <div class="time02">
+            <input type="number" class="form-control placar" name="placarPais1" min="0" [(ngModel)]="jogo5.placar2"
+            (ngModelChange)="partida5()">
+            <span>{{nomePais1}}</span>
+            <img src="{{iconPais1}}" style="float: right;">
+          </div>
+        </article>
+        <!-- JOGO 6 -->
+        <article id="jogo6" class="jogo">
+          <div class="time01">
+            <img src="{{iconPais2}}">
+            <span>{{nomePais2}}</span>
+            <input type="number" style="float: right;" class="form-control placar" name="placarPais2" min="0" [(ngModel)]="jogo6.placar1"
+            (ngModelChange)="partida6()">
+          </div>
+          <img class="x" src="/assets/images/x.png" alt="X">
+          <div class="time02">
+            <input type="number" class="form-control placar" name="placarPais3" min="0" [(ngModel)]="jogo6.placar2"
+            (ngModelChange)="partida6()">
+            <span>{{nomePais3}}</span>
+            <img src="{{iconPais3}}" style="float: right;">
+          </div>
+        </article>
     </section>
-    <section>
+    <section class="item-b">
       <table class="table table-bordered">
         <thead>
           <tr class="table-secondary">
@@ -165,5 +165,5 @@
         </tbody>
       </table>
     </section>
-  </main>
+  </section>
 </form>
