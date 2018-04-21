@@ -1,13 +1,9 @@
 .background{
     background-color: #cfd1d1;
     border-radius: 7px;
-    /* margin: 10px; */
-
 }
 
 .placar{
-    /* width: 45px;
-    margin-top: 5%; */
     width: 5vw
 }
 
@@ -16,49 +12,27 @@ input {
     text-align: center;
 }
 
-span{
-    /* padding: 0%; */
-    /* vertical-align: bottom; */
-}
-
 .x{
-    /* padding-right: 4%; */
-    /* padding-left: 2%; */
-    /* margin-left: 2%; */
-    /* width: 3%; */
-    /* width: 40px;
-    height: 30%; */
-    /* height: 10%; */
-    /* margin-top: 0.8%; */
+    justify-self: center;
 }
 
 img{
     width: 40px;
-    /* padding-top: 0%; */
-    /* margin-top: 4%; */
 }
 
 .jogo{
-    display: -webkit-inline-box;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);    
 }
 
 .time01{
-    /* padding: 0%; */
-    /* float: left; */
-    /* vertical-align: -webkit-baseline-middle; */
-} 
-
-.time01 span{
-    /* vertical-align: bottom; */
-    /* vertical-align: -webkit-baseline-middle; */
-    
+    grid-column-start: 1;
+    grid-column-end: 4;
 } 
 
 .time02{
-    /* padding: 0%;
-    float: right; */
-    /* vertical-align: -webkit-baseline-middle; */
-    
+    grid-column-start: 5;
+    grid-column-end: 8;   
 }
 
 input[type="number"] {
@@ -81,7 +55,6 @@ h5{
     color: black;
     margin-top: 1%;
     margin-bottom: 0%;
-    /* background-color: wheat; */
     background-color: #cfd1d1;
     border-radius: 7px;
 
@@ -90,39 +63,31 @@ h5{
 table{
     background-color: white;
     margin-top: 2.5%;
-    height: 90%;
-}
-
-section{
-    /* display: inline-grid;
-    grid-template-columns: no-repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 15px; */
-}
-
-article{
-    /* display: grid;
-    grid-template-columns: no-repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 15px; */
+    /* height: 98%; */
+    width: 95%;
+    margin-left: 2.5%;
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    /* grid-gap: 5%; */
-    /* grid-template-columns: repeat(7, 20px [col-start]) 5%;
-    grid-template-rows: repeat(6, 20px [col-start]) 5%; */
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    grid-gap: 2%;
 }
 
 .item-a{
     grid-column-start: 1;
     grid-column-end: 7;
+    display: grid;
+    grid-template-rows: 6;
 }
 
 .item-b{
-    display: inline-grid;
-    grid-column-start: 8;
+    grid-column-start: 7;
     grid-column-end:13;
-    /* grid-template-columns: repeat(7, 20px [col-start]) 5%;
-    grid-template-rows: repeat(6, 20px [col-start]) 5%; */
+    grid-row: auto;
+    align-content: center;
 }
