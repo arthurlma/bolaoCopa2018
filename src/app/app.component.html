@@ -27,14 +27,14 @@
                     (primeiroColocado)="primeiroH" (segundoColocado)="segundoH"></app-palpites>
     </div>
     <div *ngIf="!faseGrupo">
-      <!-- <app-palpites-mata-mata [primeiroA]="primeiroA"  [primeiroA]="primeiroA" 
-                              [primeiroB]="primeiroB"  [primeiroB]="primeiroB"
-                              [primeiroC]="primeiroC"  [primeiroC]="primeiroC"
-                              [primeiroD]="primeiroD"  [primeiroD]="primeiroD"
-                              [primeiroE]="primeiroE"  [primeiroE]="primeiroE"
-                              [primeiroF]="primeiroF"  [primeiroF]="primeiroF"
-                              [primeiroG]="primeiroG"  [primeiroG]="primeiroG"
-                              [primeiroH]="primeiroH"  [primeiroH]="primeiroH" ></app-palpites-mata-mata> -->
+      <app-palpites-mata-mata [primeiroA]="primeiroA"  [segundoA]="segundoA" 
+                              [primeiroB]="primeiroB"  [segundoB]="segundoB"
+                              [primeiroC]="primeiroC"  [segundoC]="segundoC"
+                              [primeiroD]="primeiroD"  [segundoD]="segundoD"
+                              [primeiroE]="primeiroE"  [segundoE]="segundoE"
+                              [primeiroF]="primeiroF"  [segundoF]="segundoF"
+                              [primeiroG]="primeiroG"  [segundoG]="segundoG"
+                              [primeiroH]="primeiroH"  [segundoH]="segundoH" ></app-palpites-mata-mata>
     </div>
     <button *ngIf="!faseGrupo" type="button" class="btn d-flex" (click)="faseGrupo = !faseGrupo">Voltar</button>
     <button *ngIf="faseGrupo" type="button" class="btn d-flex" (click)="faseGrupo = !faseGrupo">Avançar</button>
