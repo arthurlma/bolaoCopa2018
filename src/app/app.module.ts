@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { PalpitesComponent } from './palpites/palpites.component';
 import { FormsModule } from '@angular/forms';
+import { PalpitesMataMataComponent } from './palpites-mata-mata/palpites-mata-mata.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     NavbarComponent,
     MenuComponent,
-    PalpitesComponent
+    PalpitesComponent,
+    PalpitesMataMataComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Paises } from '../paises.enum';
 import { Selecao } from './../models/selecao';
 import { Jogo } from './../models/jogo';
@@ -71,6 +71,8 @@ export class PalpitesComponent implements OnInit {
     this.jogo5.selecao1 = Paises[pais4];
     this.quarto.nome = Paises[pais4];
   }
+  @Output() primeiroColocado = new EventEmitter();
+  @Output() segundoColocado = new EventEmitter();
 
   
 
@@ -302,6 +304,11 @@ export class PalpitesComponent implements OnInit {
     this.segundo = this.selecoes[1];
     this.terceiro = this.selecoes[2];
     this.quarto = this.selecoes[3];
+    console.log(this.primeiro);    
+    this.primeiroColocado.emit(this.primeiro.nome);
+    console.log(this.primeiroColocado);
+    this.segundoColocado.emit(this.segundo.nome);
+    // console.log(this.segundoColocado);    
   }
 
   compare(b: Selecao, a: Selecao){
