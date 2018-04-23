@@ -1,5 +1,6 @@
 export class Selecao {
     id: string = null;
+    iconNome: string = null; 
     nome: string = null;
     // Jogos: number = 0;
     pontos: number = 0;

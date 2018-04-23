@@ -39,6 +39,7 @@ export class PalpitesComponent implements OnInit {
     this.iconPais1 = '/assets/icons65/' + pais1 + '.png';
     this.nomePais1 = Paises[pais1];
     this.selecao1.nome = this.nomePais1;
+    this.selecao1.iconNome = pais1;
     this.jogo1.selecao1 = Paises[pais1];
     this.jogo3.selecao1 = Paises[pais1];
     this.jogo5.selecao2 = Paises[pais1];
@@ -48,6 +49,7 @@ export class PalpitesComponent implements OnInit {
     this.iconPais2 = '/assets/icons65/' + pais2 + '.png';
     this.nomePais2 = Paises[pais2];
     this.selecao2.nome = this.nomePais2;
+    this.selecao2.iconNome = pais2;
     this.jogo1.selecao2 = Paises[pais2];
     this.jogo4.selecao2 = Paises[pais2];
     this.jogo6.selecao1 = Paises[pais2];
@@ -56,7 +58,8 @@ export class PalpitesComponent implements OnInit {
   @Input() set pais3(pais3: string) {
     this.iconPais3 = '/assets/icons65/' + pais3 + '.png';
     this.nomePais3 = Paises[pais3];
-    this.selecao3.nome =this.nomePais3;
+    this.selecao3.nome = this.nomePais3;
+    this.selecao3.iconNome = pais3;
     this.jogo2.selecao1 = Paises[pais3];
     this.jogo3.selecao2 = Paises[pais3];
     this.jogo6.selecao2 = Paises[pais3];
@@ -66,6 +69,7 @@ export class PalpitesComponent implements OnInit {
     this.iconPais4 = '/assets/icons65/' + pais4 + '.png';
     this.nomePais4 = Paises[pais4];
     this.selecao4.nome = this.nomePais4;
+    this.selecao4.iconNome = pais4;
     this.jogo2.selecao2 = Paises[pais4];
     this.jogo4.selecao1 = Paises[pais4];
     this.jogo5.selecao1 = Paises[pais4];
@@ -304,10 +308,10 @@ export class PalpitesComponent implements OnInit {
     this.segundo = this.selecoes[1];
     this.terceiro = this.selecoes[2];
     this.quarto = this.selecoes[3];
-    console.log(this.primeiro);    
-    this.primeiroColocado.emit(this.primeiro.nome);
-    console.log(this.primeiroColocado);
-    this.segundoColocado.emit(this.segundo.nome);
+    // console.log(this.primeiro);    
+    this.primeiroColocado.emit(this.primeiro.iconNome);
+    // console.log(this.primeiroColocado);
+    this.segundoColocado.emit(this.segundo.iconNome);
     // console.log(this.segundoColocado);    
   }
 

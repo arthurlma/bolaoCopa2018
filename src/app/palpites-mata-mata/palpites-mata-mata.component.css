@@ -156,3 +156,15 @@
 .list-group-item{
     padding: 0vw;
 }
+
+.padding-null-item{
+    padding: 1.25rem 1.25rem; 
+}
+
+.vencedor{
+    background-color: #67c96c;
+}
+
+.perdedor{
+    background-color: rgb(231, 231, 231);
+}
