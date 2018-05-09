@@ -7,7 +7,32 @@
   <div style="margin-top: 3%">
   <div style="margin-right: 3%">
     <!-- <app-menu></app-menu> -->
-    <div *ngIf="faseGrupo" >
+
+<!--   
+  <ul>
+    <li *ngFor="let item of itens | async">
+      <pre>{{ item | json }}</pre>
+      <p>{{item.id}}</p>
+    </li>
+  </ul>
+
+  <input type="text" class="" name="" id="" [(ngModel)]="text">
+  <button type="submit" (click)="salvar()">salvar</button>
+ -->
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+    <!-- <div *ngIf="faseGrupo" >
       <h2>Fase de Grupo</h2>
       <app-palpites [nomeGrupo]="'Grupo A'" [pais1]="'Russia'" [pais2]="'ArabiaSaudita'" [pais3]="'Egito'" [pais4]="'Uruguai'"
                     (primeiroColocado)="primeiroA = $event" (segundoColocado)="segundoA = $event"></app-palpites>
@@ -37,7 +62,9 @@
                               [primeiroH]="primeiroH"  [segundoH]="segundoH" ></app-palpites-mata-mata>
     </div>
     <button *ngIf="!faseGrupo" type="button" class="btn d-flex" (click)="faseGrupo = !faseGrupo">Voltar</button>
-    <button *ngIf="faseGrupo" type="button" class="btn d-flex" (click)="faseGrupo = !faseGrupo">Avançar</button>
+    <button *ngIf="faseGrupo" type="button" class="btn d-flex" (click)="faseGrupo = !faseGrupo">Avançar</button> -->
+
+
     <!-- <button *ngIf="!faseGrupo" type="button" class="btn d-flex">Finalizar Palpite</button> -->
   </div>
 </div>

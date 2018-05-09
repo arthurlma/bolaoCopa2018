@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-root',
@@ -40,4 +42,19 @@ export class AppComponent {
   // primeiroH: string = 'Polonia';
   // segundoH: string = 'Senegal';
   faseGrupo: boolean = true;
+
+  itens: Observable<any[]>;
+  text: string;
+  lastid: any;
+
+  constructor(private afs: AngularFirestore){
+    this.itens = afs.collection('teste').valueChanges();
+  }
+
+  salvar(){
+    this.lastid = this.afs.collection('teste').add({
+      teste: this.text
+    })
+    console.log(this.lastid);
+  }
 }

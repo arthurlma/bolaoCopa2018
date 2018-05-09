@@ -8,9 +8,9 @@ export class Palpite {
     oitavasSelecoes: Selecao[] = null;
     quartasSelecoes: Selecao[] = null;
     semisSelecoes: Selecao[] = null;
-    campeãoSelecoes: Selecao = null;
-    viceSelecoes: Selecao = null;
-    terceiroSelecoes: Selecao = null;
+    campeão: Selecao = null;
+    vice: Selecao = null;
+    // terceiroSelecoes: Selecao = null;
     pontuacao: number = null;
 
 

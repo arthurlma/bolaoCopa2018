@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light ">
-  <!-- <a class="navbar-brand" href="#"><span class="wheat">Início</span></a> -->
+  <!-- <a class="navbar-brand" routerLink="#"><span class="wheat">Início</span></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
     aria-expanded="false" aria-label="Toggle navigation" onclick="collapseMenu()">
     <span class="navbar-toggler-icon"></span>
@@ -7,56 +7,56 @@
   <div class="collapse navbar-collapse" style="margin:3%; padding-bottom: 2.5%;" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <!-- <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="wheat ">Menu</span> <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="#"><span class="wheat ">Menu</span> <span class="sr-only">(current)</span></a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" routerLink="#">
           <span class="wheat">Início</span>
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           <span class="wheat ">Menu</span>
         </a>
         <div class="dropdown-menu background" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="/palpite">
             <span class="wheat2">Novo Palpite</span>
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="#">
             <span class="wheat2">Consultar Palpite</span>
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="#">
             <span class="wheat2">Classificação</span>
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="#">
             <span class="wheat2">Imprimir Paplite</span>
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="#">
             <span class="wheat2">Folha de Palpites</span>
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" routerLink="#">
             <span class="wheat2">Regulamento</span>
           </a>
           <!-- <div class="dropdown-divider"></div> -->
-          <!-- <a class="dropdown-item" href="#"><span class="wheat2">Fale com o Administrador</span></a>
-            <a class="dropdown-item" href="#"><span class="wheat2">Trocar Usuário</span></a> -->
+          <!-- <a class="dropdown-item" routerLink="#"><span class="wheat2">Fale com o Administrador</span></a>
+            <a class="dropdown-item" routerLink="#"><span class="wheat2">Trocar Usuário</span></a> -->
         </div>
       </li>
       <!-- <li class="nav-item">
-        <a class="nav-link" href="#"><span class="wheat">Regulamento</span></a>
+        <a class="nav-link" routerLink="#"><span class="wheat">Regulamento</span></a>
       </li> -->
     </ul>
     <span class="navbar-text">
-      <a class="nav-link" href="#">
+      <a class="nav-link" routerLink="#">
         <span class="wheat">Fale com o Administrador</span>
       </a>
     </span>
     <span class="navbar-text" style="margin-right: 2%">
-      <a class="nav-link" href="" *ngIf="!logado" (click)="login()">
+      <a class="nav-link" routerLink="" *ngIf="!logado" (click)="login()">
         <span class="wheat">Login</span>
       </a>
-      <a class="nav-link" href="" *ngIf="logado" (click)="logout()">
+      <a class="nav-link" routerLink="" *ngIf="logado" (click)="logout()">
         <span class="wheat">Logout</span>
       </a>
     </span>
