@@ -25,22 +25,7 @@ export class AppComponent {
   segundoG: string = null;
   primeiroH: string = null;
   segundoH: string = null;
-  // primeiroA: string = 'Russia';
-  // segundoA: string = 'ArabiaSaudita';
-  // primeiroB: string = 'Portugal';
-  // segundoB: string = 'Espanha';
-  // primeiroC: string = 'Franca';
-  // segundoC: string = 'Australia';
-  // primeiroD: string = 'Argentina';
-  // segundoD: string = 'Islandia';
-  // primeiroE: string = 'Brasil';
-  // segundoE: string = 'Suica';
-  // primeiroF: string = 'Alemanha';
-  // segundoF: string = 'Mexico';
-  // primeiroG: string = 'Belgica';
-  // segundoG: string = 'Panama';
-  // primeiroH: string = 'Polonia';
-  // segundoH: string = 'Senegal';
+  // primeiroA: string = 'Russia'; segundoA: string = 'ArabiaSaudita'; primeiroB: string = 'Portugal'; segundoB: string = 'Espanha'; primeiroC: string = 'Franca'; segundoC: string = 'Australia'; primeiroD: string = 'Argentina'; segundoD: string = 'Islandia'; primeiroE: string = 'Brasil'; segundoE: string = 'Suica'; primeiroF: string = 'Alemanha'; segundoF: string = 'Mexico'; primeiroG: string = 'Belgica'; segundoG: string = 'Panama'; primeiroH: string = 'Polonia'; segundoH: string = 'Senegal';
   faseGrupo: boolean = true;
 
   itens: Observable<any[]>;
