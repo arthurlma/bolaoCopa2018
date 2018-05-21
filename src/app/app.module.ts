@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -14,12 +14,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { PalpitesGrupoComponent } from './palpites-grupo/palpites-grupo.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { AppRoutes } from './app.routes';
+import { AuthGuardService } from './services/auth-guard.service';
+import { AuthService } from './services/auth.service';
 
-
-const appRoutes: Routes = [
-  {path: 'palpite', component: PalpitesComponent},
-  //{path: '', component: },
-];
 
 @NgModule({
   declarations: [
@@ -28,18 +28,21 @@ const appRoutes: Routes = [
     MenuComponent,
     PalpitesComponent,
     PalpitesMataMataComponent,
-    PalpitesGrupoComponent
+    PalpitesGrupoComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutes,
     NgbModule.forRoot(),
     FormsModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
     AngularFirestoreModule
   ],
-  providers: [],
+  providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
