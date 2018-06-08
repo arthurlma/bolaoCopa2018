@@ -2,6 +2,7 @@ import { Palpite } from './palpite';
 
 export class Usuario {
     id: string = null;
+    email: string = null;
     nome: string = null;
     palpites: Palpite[] = null;
     bolaoIds: string[] = null;

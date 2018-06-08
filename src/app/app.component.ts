@@ -33,13 +33,14 @@ export class AppComponent {
   lastid: any;
 
   constructor(private afs: AngularFirestore){
-    this.itens = afs.collection('teste').valueChanges();
+    // afs.firestore.settings({ timestampsInSnapshots: true });
+    // this.itens = afs.collection('teste').valueChanges();
   }
 
-  salvar(){
-    this.lastid = this.afs.collection('teste').add({
-      teste: this.text
-    })
-    console.log(this.lastid);
-  }
+  // salvar(){
+  //   this.lastid = this.afs.collection('teste').add({
+  //     teste: this.text
+  //   })
+  //   console.log(this.lastid);
+  // }
 }

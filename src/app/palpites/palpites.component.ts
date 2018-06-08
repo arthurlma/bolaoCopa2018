@@ -34,6 +34,7 @@ export class PalpitesComponent{
   lastid: any;
 
   constructor(private afs: AngularFirestore){
+    // afs.firestore.settings({ timestampsInSnapshots: true });
     this.itens = afs.collection('teste').valueChanges();
   }
 
