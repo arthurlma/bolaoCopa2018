@@ -1,11 +1,15 @@
 import { Palpite } from './palpite';
 
 export class Usuario {
-    id: string = null;
-    email: string = null;
-    nome: string = null;
-    palpites: Palpite[] = null;
-    bolaoIds: string[] = null;
+    uid: string;
+    email: string;
+    photoURL?: string;
+    displayName?: string;
+    // id: string = null;
+    // email: string = null;
+    // nome: string = null;
+    palpites?: Palpite[] = null;
+    bolaoIds?: string[] = null;
 
 
     constructor(values: Object = {}) {

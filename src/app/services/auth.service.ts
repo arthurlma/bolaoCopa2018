@@ -6,44 +6,44 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 
 import { Observable } from 'rxjs/Observable';
-import { switchMap} from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
+import { Usuario } from './../models/usuario';
 
 
-interface User {
-  uid: string;
-  email: string;
-  photoURL?: string;
-  displayName?: string;
-  favoriteColor?: string;
-}
+// interface User {
+//   uid: string;
+//   email: string;
+//   photoURL?: string;
+//   displayName?: string;
+// }
 
 @Injectable()
 export class AuthService {
-  user: Observable<User>;
-  userDetails: User = null;
+  user: Observable<Usuario>;
+  userDetails: Usuario = null;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
     afs.firestore.settings({ timestampsInSnapshots: true });
     //// Get auth data, then get firestore user document || null
-   this.user = this.afAuth.authState
-   .switchMap(user => {
-     if (user) {
-       return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
-     } else {
-       return null;
-     }
-   })
-   
-   this.user.subscribe(
-     (user) => {
-       if (user) {
-         this.userDetails = user;
-         console.log(this.userDetails);
-       } else{
-         this.userDetails = null;
-       }
-     }
-   );
+    this.user = this.afAuth.authState
+      .switchMap(user => {
+        if (user) {
+          return this.afs.doc<Usuario>(`users/${user.uid}`).valueChanges();
+        } else {
+          return null;
+        }
+      })
+
+    this.user.subscribe(
+      (user) => {
+        if (user) {
+          this.userDetails = user;
+          console.log(this.userDetails);
+        } else {
+          this.userDetails = null;
+        }
+      }
+    );
   }
 
   signInWithFacebook() {
@@ -60,9 +60,19 @@ export class AuthService {
 
   signInRegular(email, password) {
     console.log('authservice: email');
-    const credential = firebase.auth.EmailAuthProvider.credential( email, password );
+    const credential = firebase.auth.EmailAuthProvider.credential(email, password);
     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
   }
+
+  // createUserWithEmailAndPassword(email, password) {
+  //   return this.afAuth.auth.createUserWithEmailAndPassword(email,password).then((response: firebase.User) => {
+  //     response.sendEmailVerification();
+
+  //     console.log('User created.');
+  //   }).catch(error => {
+  //     console.error(error.message);
+  //   });
+  // }
 
   private oAuthLogin(provider) {
     return this.afAuth.auth.signInWithPopup(provider)
@@ -76,7 +86,7 @@ export class AuthService {
 
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
 
-    const data: User = {
+    const data: Usuario = {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
@@ -87,8 +97,12 @@ export class AuthService {
 
   }
 
+  getUsuarioLogado() {
+    return this.userDetails;
+  }
+
   isLoggedIn() {
-  if (this.userDetails == null ) {
+    if (this.userDetails == null) {
       return false;
     } else {
       return true;
@@ -98,7 +112,7 @@ export class AuthService {
 
   logout() {
     this.afAuth.auth.signOut()
-    .then((res) => this.router.navigate(['/']));
+      .then((res) => this.router.navigate(['/']));
   }
 
 }
