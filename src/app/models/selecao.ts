@@ -1,13 +1,15 @@
 export class Selecao {
-    Nome: string = null;
+    id: string = null;
+    iconNome: string = null; 
+    nome: string = null;
     // Jogos: number = 0;
-    Pontos: number = 0;
-    Vitorias: number = 0;
-    Empates: number = 0;
-    Derrotas: number = 0;
-    GP: number = 0;
-    GC: number = 0;
-    SG: number = 0;
+    pontos: number = 0;
+    vitorias: number = 0;
+    empates: number = 0;
+    derrotas: number = 0;
+    gp: number = 0;
+    gc: number = 0;
+    sg: number = 0;
 
 
     constructor(values: Object = {}) {

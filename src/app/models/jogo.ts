@@ -11,6 +11,8 @@ export class Jogo {
     empateSelecao2: number = null;
     derrotaSelecao1: number = null;
     derrotaSelecao2: number = null;
+    grupo: string = null;
+    jogo: number = null;    
 
 
     constructor(values: Object = {}) {
