@@ -2,8 +2,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body {
-    /* background:url(/assets/images/Background.jpg) repeat; */
-    /* background-size: 40%; */
+    background:url(/assets/images/Background.jpg) repeat;
+    background-size: 40%;
     width: 100%;
     position: absolute;
     background-color: rgb(255, 255, 235);
